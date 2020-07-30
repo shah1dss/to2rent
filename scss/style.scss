@@ -3,8 +3,10 @@
 @import "fonts";
 @import "normalize";
 
-body{
+$main-color: #888888;
+html{
     box-sizing: border-box;
+    @include roboto;
 }
 *{
     margin: 0;
@@ -16,6 +18,192 @@ body{
     max-width: 1200px;
     margin: 0 auto;
 }
+.header{
+    color:$main-color;
+}
+.header__logo{
+    text-align: center;
+}
+
+.menu{
+    &__nav{
+        margin-top: 60px;
+        border-top: 2px solid #c4c4c4;
+        &-wrapper{
+            display: flex;
+            justify-content: center;
+        }
+        &-item{
+            list-style: none;
+            padding: 35px 100px 35px 100px;
+            border-left: 2px solid #c4c4c4;
+            border-right: 2px solid #c4c4c4;
+            &:not(:first-child){
+                border-left: none;
+            }
+            a{
+                text-decoration: none;
+                font-size: 24px;
+                line-height: 28px;
+                // @include roboto;
+                color: $main-color;
+            }
+            &:hover{
+                background-color: #020202;
+                a{
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+.header__slider{
+    min-height: 600px;
+    position: relative;
+    .slider-arrows{
+        z-index: 1;
+        position: absolute;
+        top: 50%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .slider-arrows__right{
+        right: 0;
+    }
+    .slider-arrows__left{
+        left: 0;
+    }
+}
+
+.header__search-form{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 70px;
+    align-items: center;
+}
+.search-form{
+    &__text{
+        font-size: 24px;
+        line-height: 24px;
+        max-width: 156px;
+    }
+    &__input{
+        margin-left: 70px;
+        font-size: 18px;
+        line-height: 24px;
+        border: 2px solid #c4c4c4;
+        width: 471px;
+        height: 70px;
+    }
+    &__button{
+        font-size: 24px;
+        line-height: 24px;
+        color: #fff;
+        padding: 23px 23px 23px 23px;
+        background-color: #c4c4c4;
+        border: 2px solid #c4c4c4;
+    }
+}
+
+.best-option__title{
+    font-size: 48px;
+    line-height: 64px;
+    background-color: #020202;
+    color: #fff;
+    text-align: center;
+    @include regular;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+.apartments-form{
+    text-align: center;
+}
+.apartments-form__wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    align-items: center;
+}
+.apartments-form__text{
+    padding-top: 30px;
+    font-size: 24px;
+    line-height: 24px;
+    color: $main-color;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.apartments-form__button{
+    font-size: 18px;
+    line-height: 24px;
+    padding: 13px 50px 13px 50px;
+    color: #fff;
+    background-color: #c4c4c4;
+    border: 2px solid #C4C4C4;
+}
+
+.advantages-form{
+    max-width: 470px;
+    margin-bottom: 180px;
+    &__wrapper{
+        margin-top: 200px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__title{
+        font-size: 36px;
+        line-height: 36px;
+        @include regular;
+    }
+    &__img{
+        float: left;
+        padding-right: 33px;
+    }
+    &__text{
+        font-size: 18px;
+        line-height: 24px;
+        padding-top: 20px;
+    }
+    &__link{
+        display: flex;
+        align-items: center;
+        a{
+            font-size: 18px;
+            line-height: 24px;
+            color: $main-color;
+            padding-left: 6px;
+        }
+    }
+}
+
+.house{
+    min-height: 1080px;
+    background-image: url(../img/house.jpg);
+}
+.house__title{
+    font-size: 48px;
+    line-height: 48px;  
+    @include regular;
+    color: #fff;
+    text-align: right;
+    padding-top: 68px;
+    padding-bottom: 30px;
+}
+.house__button{
+    font-size: 18px;
+    line-height: 18px;
+    color:#fff;
+    padding: 16px 18px;
+    background-color: #020202;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+}
+.house__inner{
+    position: relative;
+}
+
 
 
 

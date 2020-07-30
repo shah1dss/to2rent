@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Roboto Condensed Regular';
+    src: url('../fonts/RobotoCondensed-Regular.eot');
+    src: url('../fonts/RobotoCondensed-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/RobotoCondensed-Regular.woff') format('woff'),
+    url('../fonts/RobotoCondensed-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+@font-face {
+    font-family: 'PT Serif Regular';
+    src: url('../fonts/PTSerif-Regular.eot');
+    src: url('../fonts/PTSerif-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/PTSerif-Regular.woff') format('woff'),
+    url('../fonts/PTSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@mixin roboto{
+	font-family: 'Roboto Condensed Regular', sans-serif;
+}
+@mixin regular{
+	font-family: 'PT Serif Regular', sans-serif;
+}
