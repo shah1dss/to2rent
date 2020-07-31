@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>to2Rent</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -12,8 +12,8 @@
   <header class="header">
     <div class="container">
       <div class="header__logo">
-        <a class="logo-img" href="#">
-          <img src="img/logo.svg" alt="logo">
+        <a class="logo-link" href="#">
+          <img class="logo-link__img" src="img/logo.svg" alt="logo">
         </a> 
       </div>
     </div>
@@ -34,14 +34,9 @@
         </ul>
       </nav>
       <div class="header__slider">
-        <div class="header__slider-item">
-          <img src="img/slider.svg" alt="slider">
-        </div>
-        <div class="header__slider-item">
-          <img src="img/slider.svg" alt="slider">
-        </div>
-        <div class="header__slider-item">
-          <img src="img/slider.svg" alt="slider">
+        <div class="header__slider-item" style="background-image: url(img/slider.svg);"></div>
+        <div class="header__slider-item" style="background-image: url(img/slider.svg);"></div>
+        <div class="header__slider-item" style="background-image: url(img/slider.svg);"></div>
         </div>
       </div>
     <div class="header__search-form">
@@ -121,7 +116,7 @@
   <section class="description">
     <div class="container">
       <div class="section__inner">
-        <div class="block__managers">
+        <div class="block__managers block">
           <div class="description-title">Наши менеджеры</div>
           <div class="block__managers-wrapper">
             <div class="block__managers-content">
@@ -140,7 +135,7 @@
             </div>
           </div>
         </div>
-        <div class="block__blog">
+        <div class="block__blog block">
           <div class="description-title">Блог</div>
           <div class="blog-item">
             <a href="#" class="blog-link">
@@ -185,7 +180,7 @@
             <div class="blog-text">Дома для аренды на год в Майами</div>
           </div>
         </div>
-        <div class="block__reviews">
+        <div class="block__reviews block">
           <div class="description-title">Отзывы</div>
           <img src="img/reviews-img.svg" alt="" class="reviews-img"> 
           <div class="reviews-text">Это лучший сервис по подбору аппартаментов. Пользуюсь услугами To rent уже 5 лет. Всегда идеально и именно то, что мне нужно.</div>
@@ -209,7 +204,7 @@
     </div>
   </section>
   <footer class="footer">
-    <img src="img/logo.svg" alt="logo">
+    <img class="logo-link__img" src="img/logo.svg" alt="logo">
   </footer>
   
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

@@ -24,7 +24,6 @@ html{
 .header__logo{
     text-align: center;
 }
-
 .menu{
     &__nav{
         margin-top: 60px;
@@ -35,7 +34,7 @@ html{
         }
         &-item{
             list-style: none;
-            padding: 35px 100px 35px 100px;
+            padding: 35px 100px;
             border-left: 2px solid #c4c4c4;
             border-right: 2px solid #c4c4c4;
             &:not(:first-child){
@@ -45,9 +44,9 @@ html{
                 text-decoration: none;
                 font-size: 24px;
                 line-height: 28px;
-                // @include roboto;
                 color: $main-color;
             }
+            &.active,
             &:hover{
                 background-color: #020202;
                 a{
@@ -58,7 +57,6 @@ html{
     }
 }
 .header__slider{
-    min-height: 600px;
     position: relative;
     .slider-arrows{
         z-index: 1;
@@ -72,6 +70,12 @@ html{
     }
     .slider-arrows__left{
         left: 0;
+    }
+    &-item{
+        min-height: 600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
     }
 }
 
@@ -104,6 +108,7 @@ html{
         padding: 23px 23px 23px 23px;
         background-color: #c4c4c4;
         border: 2px solid #c4c4c4;
+        cursor: pointer;
     }
 }
 
@@ -179,8 +184,11 @@ html{
 }
 
 .house{
-    min-height: 1080px;
+    min-height: 100vh;
     background-image: url(../img/house.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
 }
 .house__title{
     font-size: 48px;

@@ -1,0 +1,213 @@
+
+@media(max-width: 1200px){
+    .menu__nav-item {
+        padding: 30px 80px;
+    }
+    .apartments-form__wrapper{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .apartments-form{
+        padding-top: 10px;
+    }
+    .house{
+        min-height: 80vh;
+    }
+    .container{
+        max-width: 900px;
+    }
+    .section__inner{
+        flex-wrap: wrap;
+    }
+    .question-form{
+        margin-top: 15px;
+        &__input {
+            width: 300px;
+        }
+    }
+
+
+}
+
+@media(max-width: 1001px){
+    .menu__nav-item {
+        padding: 20px 40px;
+    }
+    .search-form__input {
+        margin-left: 45px;
+        width: 390px;
+    }
+    .container{
+        max-width: 700px;
+    }
+    .section__inner{
+        justify-content: space-around;
+        .block{
+            margin-top: 40px;
+        }
+    }
+}
+@media (max-width: 980px){
+    .contacts {
+        padding-top: 90px;
+        padding-bottom: 100px;
+        flex-direction: column;
+    }
+    .contacts-links {
+        align-items: center;
+    }
+    .contacts__link{
+        padding-right: 0;
+    }
+}
+@media (max-width:801px){
+    .header__search-form {
+        padding-top: 40px;
+        padding-bottom: 45px;
+    }
+    .search-form__text {
+        font-size: 20px;
+    }
+    .search-form__button {
+        font-size: 20px;
+        img{
+            display: none;
+        }
+    }
+    .search-form__input {
+        margin-left: 5px;
+        width: 330px;
+    }
+    .best-option__title {
+        font-size: 35px;
+    }
+    .advantages-form__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+    .house{
+        .container{
+            max-width: 500px;
+        }
+    }
+}
+@media (max-width: 992px){
+    .house{
+        height: 600px;
+    }
+}
+
+@media (max-width: 768px){
+    .logo-link__img{
+        max-width: 250px;
+    }
+    .menu__nav-item {
+        padding: 10px 20px;
+    }
+    .menu__nav {
+        margin-top: 20px;
+        border-top: 2px solid #c4c4c4;
+    }
+    .header__slider-item{
+        min-height: 400px;
+    }
+    .house{
+        height: 400px;
+    }
+}
+@media (max-width: 650px){
+    .header__search-form {
+        padding-right: 5px;
+        padding-left: 5px;  
+    }
+}
+
+@media (max-width: 580px){
+    .menu__nav-item a {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+@media (max-width: 480px){
+    .menu__nav-wrapper{
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu__nav-item{
+        border: none;
+        border-bottom: 2px solid #c4c4c4;
+    }
+    .header__search-form{
+        flex-direction: column;
+    }
+    .search-form__text {
+        font-size: 20px;
+        max-width: 200px;
+        padding-bottom: 10px;
+    }
+    .search-form__input {
+        margin-left: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        padding-left: 0;
+    }
+    .search-form__button {
+        width: 100%;
+    }
+    .slider-arrows{
+        width: 40px;
+    }
+    .advantages-form__title {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .advantages-form__text {
+        font-size: 16px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+    .advantages-form {
+        margin-bottom: 60px;
+    }
+    .best-option__title {
+        font-size: 20px;
+    }
+
+    .advantages-form__wrapper {
+        margin-top: 100px;
+        padding-left: 20px;
+    }
+    .house__title {
+        font-size: 30px;
+        line-height: 32px;
+        padding-bottom: 11px;
+        padding-right: 20px;
+    }
+    .house__button{
+        margin-right: 20px;
+    }
+
+    .question-form{
+        flex-direction: column;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    .question-form__text {
+        max-width: 150px;
+        padding-bottom: 15px;
+    }
+    .question-form__input {
+        width: 100%;
+        padding-left: 0;
+    }
+    .question-form__button {
+        padding: 26px 33px 26px 37px;
+        width: 100%;
+        margin-top: 15px;
+
+    }
+    .block__blog{
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
